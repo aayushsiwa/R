@@ -22,5 +22,8 @@ rmse <- sqrt(mse)
 # mae
 mae <- mean(abs(data$Price_euros - data$predicted_price))
 
+plot(data$Ram, data$Price_euros)
+abline(model, col = "red")
+
 list("MSE"=mse, "RMSE"=rmse, "MAE"=mae)
 
